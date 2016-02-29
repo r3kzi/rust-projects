@@ -1,1 +1,5 @@
 target/
+.idea
+main.0.o
+main.metadata.o
+hello_world.iml
