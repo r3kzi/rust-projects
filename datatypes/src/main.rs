@@ -1,8 +1,10 @@
+#![allow(dead_code)]
+mod sh;
+
 use std::mem;
 
 //global variables
 const MEANING_OF_LIFE:u8 = 42;
-static z:i32 = 2;
 
 fn scope_and_shadowing(){
     let a = 123;
@@ -72,6 +74,8 @@ fn datatypes() {
 }
 
 fn main() {
+    sh::stack_and_heap();
+    println!("-----------------------------------------");
     scope_and_shadowing();
     println!("-----------------------------------------");
     operators();
