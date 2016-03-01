@@ -2,6 +2,9 @@
 #![allow(unused_variables)]
 
 mod enums;
+mod options;
+mod arrays;
+mod vectors;
 
 struct Point {
     x:f64,
@@ -22,6 +25,12 @@ struct Line {
 }
 
 fn main() {
+    vectors::vectors();
+    println!("---------------------------------------");
+    arrays::arrays();
+    println!("---------------------------------------");
+    options::options();
+    println!("---------------------------------------");
     enums::enums();
     println!("---------------------------------------");
     structures();
