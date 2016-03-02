@@ -5,6 +5,11 @@ mod enums;
 mod options;
 mod arrays;
 mod vectors;
+mod slices;
+mod strings;
+mod tuples;
+mod pm;
+mod generics;
 
 struct Point {
     x:f64,
@@ -34,4 +39,15 @@ fn main() {
     enums::enums();
     println!("---------------------------------------");
     structures();
+    println!("---------------------------------------");
+    slices::slices();
+    println!("---------------------------------------");
+    strings::strings();
+    println!("---------------------------------------");
+    tuples::tuples();
+    println!("---------------------------------------");
+    pm::pattern_matching();
+    println!("---------------------------------------");
+    generics::generics();
+
 }
